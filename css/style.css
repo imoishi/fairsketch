@@ -1,0 +1,100 @@
+.page-wrap .side-view {
+  width: 300px;
+  position: fixed;
+  right: 0;
+  z-index: 2000;
+  padding-top: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  height: calc(100vh);
+  transform: translateX(110%);
+  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+  transition: .3s all ease-in-out; }
+  .page-wrap .side-view .side-view-header {
+    width: 100%;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px; }
+    .page-wrap .side-view .side-view-header .side-view-close {
+      float: right;
+      margin-top: 7px;
+      margin-right: 10px; }
+      .page-wrap .side-view .side-view-header .side-view-close i {
+        font-size: 25px;
+        display: inline-block;
+        padding-right: 10px;
+        line-height: 2;
+        color: #fff;
+        cursor: pointer;
+        transition: .3s all ease; }
+  .page-wrap .side-view .side-view-body {
+    overflow: scroll;
+    position: relative;
+    padding: 20px;
+    height: calc(100vh - 52px);
+    padding-bottom: 150px;
+    padding-top: 100px; }
+  .page-wrap .side-view .clone-view {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative; }
+    .page-wrap .side-view .clone-view a {
+      padding: 11px 40px;
+      display: block;
+      position: relative;
+      color: #fff;
+      text-align: right;
+      font-size: 30px; }
+    .page-wrap .side-view .clone-view :hover {
+      color: #F7D203 !important; }
+
+.off-view .side-view {
+  transform: translateX(0); }
+
+.navbar {
+  background: none !important;
+  padding-top: 1.9rem; }
+  .navbar .navbar-brand {
+    font-size: 1.8rem; }
+  .navbar .navbar-nav .active a {
+    color: #F7D203 !important; }
+  .navbar .nav-item {
+    font-size: 1.2rem;
+    padding-right: 1.5rem; }
+    .navbar .nav-item a {
+      color: #fff !important; }
+    .navbar .nav-item :hover {
+      color: #F7D203 !important; }
+
+#homeSection {
+  background: url("../img/cover-pic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px; }
+  #homeSection .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    background-attachment: fixed;
+    background: rgba(0, 0, 0, 0.5); }
+    #homeSection .dark-overlay .home-inner h1 {
+      text-align: center;
+      padding-top: 15rem;
+      color: #fff; }
+    #homeSection .dark-overlay .home-inner h3 {
+      text-align: center;
+      padding-top: 1rem;
+      font-size: 2.3rem;
+      color: #fff; }
+      #homeSection .dark-overlay .home-inner h3 .text-easy {
+        color: #F7D203; }
+    #homeSection .dark-overlay .home-inner .download-btn .btn {
+      margin-left: 29rem;
+      margin-top: 1.8rem;
+      padding: 8px 2rem; }
+    #homeSection .dark-overlay .home-inner .download-btn :hover {
+      background: #fff; }

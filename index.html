@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fairsketch</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+  <div class="page-wrap">
+    <div class="nav-style">
+
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">Fairsketch</a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto js-clone-nav">
+              <li class="nav-item active">
+                <a href="#rise" class="nav-link">RISE</a>
+              </li>
+              <li class="nav-item">
+                <a href="#features" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="#review" class="nav-link">Review</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="d-inline-block d-lg mr-lg-0 mr-auto py-3">
+            <i class="fas fa-bars js-toggle" style="font-size: 18px; color: #fff;"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="side-view">
+        <div class="side-view-header">
+          <div class="side-view-close">
+            <i class="fas fa-times js-toggle"></i>
+          </div>
+        </div>
+        <div class="side-view-body"></div>
+      </div>
+
+    </div>
+  </div>
+
+  
+     
+
+
+  <!-- home section -->
+  <header id="homeSection">
+    <div class="dark-overlay">
+      <div class="home-inner container">
+        <h1>RISE - Ultimate Project Manager</h1>
+        <h3> <span class="text-easy">Easy</span> to Use</h3>
+        <div class="download-btn">
+          <button type="button" class="btn btn-warning">Download Now</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    //get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+   jQuery(document).ready(function($){
+     "use strict";
+
+     var navclone = function(){
+       $('.js-clone-nav').each(function(){
+         var $this = $(this);
+         $this.clone().attr('class','clone-view').appendTo('.side-view-body');
+       });
+
+       $('body').on('click','.js-toggle',function(e){
+         var $this = $(this);
+         e.preventDefault();
+
+         if($('body').hasClass('off-view')){
+           $('body').removeClass('off-view');
+         }else{
+           $('body').addClass('off-view');
+         }
+       });
+
+
+
+     }
+     navclone();
+   });
+
+  </script>
+</body>
+</html>
