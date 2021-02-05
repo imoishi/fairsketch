@@ -188,3 +188,15 @@ $primary-overlay: rgba(0, 0, 0, 0.5);
     }
   }
 }
+
+
+// boxes
+
+#boxes{
+  .card{
+    :hover{
+      background: $primary;
+      color: #fff;
+    }
+  }
+}

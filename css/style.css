@@ -98,3 +98,7 @@
       padding: 8px 2rem; }
     #homeSection .dark-overlay .home-inner .download-btn :hover {
       background: #fff; }
+
+#boxes .card :hover {
+  background: #F7D203;
+  color: #fff; }
