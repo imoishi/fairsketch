@@ -122,3 +122,23 @@
 #feature .card :hover {
   background: #F7D203;
   color: #fff; }
+
+#review {
+  background: url("../img/baby-hand.jpg");
+  min-height: 380px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  #review .darkOverlay {
+    position: absolute;
+    width: 100%;
+    min-height: 380px;
+    background-attachment: fixed;
+    background: rgba(0, 0, 0, 0.5); }
+    #review .darkOverlay .review-client {
+      padding-top: 7.5rem; }
+      #review .darkOverlay .review-client .review-btn :hover {
+        background: #fff; }
+
+#monitor .monitor-btn :hover {
+  background: #fff; }

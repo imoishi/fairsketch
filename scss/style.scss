@@ -244,3 +244,44 @@ $primary-overlay: rgba(0, 0, 0, 0.5);
     }
   }
 }
+
+
+//review
+#review{
+  background: url('../img/baby-hand.jpg');
+  min-height: 380px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  .darkOverlay{
+    position: absolute;
+    width: 100%;
+    // height: 100%;
+    min-height: 380px;
+    background-attachment: fixed;
+    background: $primary-overlay;
+
+    .review-client{
+      padding-top: 7.5rem;
+
+      .review-btn{
+
+        :hover{
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+#monitor{
+
+  .monitor-btn{
+
+    :hover{
+      background: #fff;
+    }
+  }
+}
