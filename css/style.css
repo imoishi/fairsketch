@@ -99,46 +99,54 @@
     #homeSection .dark-overlay .home-inner .download-btn :hover {
       background: #fff; }
 
-#boxes .card :hover {
+#features .card :hover {
   background: #F7D203;
   color: #fff; }
 
-#testimonials {
+#review {
   height: 380px;
   background: url("../img/client.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat; }
-  #testimonials .client {
+  #review .client {
     position: absolute;
     width: 100%;
     height: 100%;
     height: 380px;
     background-attachment: fixed;
     background: rgba(0, 0, 0, 0.5); }
-    #testimonials .client .client-inner {
+    #review .client .client-inner {
       padding-top: 7rem; }
 
 #feature .card :hover {
   background: #F7D203;
   color: #fff; }
 
-#review {
+#help {
   background: url("../img/baby-hand.jpg");
   min-height: 380px;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat; }
-  #review .darkOverlay {
+  #help .darkOverlay {
     position: absolute;
     width: 100%;
     min-height: 380px;
     background-attachment: fixed;
     background: rgba(0, 0, 0, 0.5); }
-    #review .darkOverlay .review-client {
+    #help .darkOverlay .review-client {
       padding-top: 7.5rem; }
-      #review .darkOverlay .review-client .review-btn :hover {
+      #help .darkOverlay .review-client .review-btn :hover {
         background: #fff; }
 
 #monitor .monitor-btn :hover {
   background: #fff; }
+
+#contact {
+  background: #000;
+  height: 400px; }
+  #contact .footer-text {
+    margin-top: 6rem; }
+  #contact .small-footer {
+    margin-top: 6.5rem; }

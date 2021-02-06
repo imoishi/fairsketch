@@ -109,8 +109,9 @@ $primary-overlay: rgba(0, 0, 0, 0.5);
 
 
 .navbar {
-  // background: white;
   padding-top: 1.9rem;
+
+
 
   .navbar-brand{
     font-size: 1.8rem;
@@ -193,7 +194,7 @@ $primary-overlay: rgba(0, 0, 0, 0.5);
 
 // boxes
 
-#boxes{
+#features{
   .card{
     :hover{
       background: $primary;
@@ -203,7 +204,7 @@ $primary-overlay: rgba(0, 0, 0, 0.5);
 }
 
 
-#testimonials{
+#review{
   height: 380px;
   background: url('../img/client.jpg');
   background-size: cover;
@@ -247,7 +248,7 @@ $primary-overlay: rgba(0, 0, 0, 0.5);
 
 
 //review
-#review{
+#help{
   background: url('../img/baby-hand.jpg');
   min-height: 380px;
   background-size: cover;
@@ -283,5 +284,19 @@ $primary-overlay: rgba(0, 0, 0, 0.5);
     :hover{
       background: #fff;
     }
+  }
+}
+
+
+#contact{
+  background: #000;
+  height: 400px;
+
+  .footer-text{
+    margin-top: 6rem;
+  }
+
+  .small-footer{
+    margin-top: 6.5rem;
   }
 }

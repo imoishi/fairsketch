@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="rise" data-spy="scroll" data-target="#main-nav">
    
   <div class="page-wrap">
     <div class="nav-style">
 
-      <nav class="navbar navbar-expand-sm fixed-top">
+      <nav class="navbar navbar-expand-sm  fixed-top" id="main-nav">
         <div class="container">
-          <a href="index.html" class="navbar-brand">Fairsketch</a>
+          <a href="#rise" class="navbar-brand">Fairsketch</a>
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -76,7 +76,7 @@
 
 
 
-  <section id="boxes" class="py-5">
+  <section id="features" class="py-5">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -124,7 +124,7 @@
 
 
   <!-- testimonials -->
-  <section id="testimonials" class="my-5">
+  <section id="review" class="my-5">
     <div class="client">
       <div class="container">
         <div class="client-inner">
@@ -214,7 +214,7 @@
 
 
 
-  <section id="review" class="my-5">
+  <section id="help" class="my-5">
     <div class="darkOverlay">
       <div class="container">
         <div class="row">
@@ -244,6 +244,28 @@
       </div>
     </div>
   </section>
+
+
+  <footer id="contact" class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="footer-text">
+            <h2 class="text-light">Anything more?</h2>
+            <p class="text-light" >Send an <span class="text-warning">email</span> to </p>
+            <h4 class="text-light">example@fairsketch.com</h4>
+          </div>
+
+          <div class="small-footer">
+            <p class="text-center text-light py-3">Copyright &copy; <span id="year"></span> <span class="text-warning">Fairsketch</span> </p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
 
 
 
@@ -287,6 +309,32 @@
       infinite: true,
       slideToShow: 1,
       slideToScroll: 1
+    });
+
+
+
+    //init scrollspy
+    $('body').scrollspy({target: '#main-nav'});
+
+    //smooth scrolling
+    $('#main-nav a').on('click', function(e) {
+      //check for a hash value
+      if(this.hash !==''){
+        //prevent default behavior
+        e.preventDefault();
+
+        //store hash
+        const hash = this.hash;
+
+        //animate smooth acroll
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function() {
+          //add hash to url after scroll
+          window.location.hash= hash;
+        });
+      }
+
     });
 
   </script>
