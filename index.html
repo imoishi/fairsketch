@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <!-- Font Awsome -->
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,7 +16,7 @@
   <div class="page-wrap">
     <div class="nav-style">
 
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container">
           <a href="index.html" class="navbar-brand">Fairsketch</a>
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -120,8 +122,59 @@
 
 
 
+
+  <!-- testimonials -->
+  <section id="testimonials" class="mb-5">
+    <div class="client">
+      <div class="container">
+        <div class="client-inner">
+          <h4 class="text-center mb-5 text-light">What our clients say</h4>
+          <div class="row text-center">
+            <div class="col">
+              <div class="slider">
+                <div>
+                  <blockquote class="blockquote text-light">
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt necessitatibus totam nihil velit. Aliquid, cum!
+                    </p>
+                    <footer class="blockquote-footer text-light">Client from 
+                      <cite title="John doe" class="text-warning">John doe</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div>
+                  <blockquote class="blockquote text-light">
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt necessitatibus totam nihil velit. Aliquid, cum!
+                    </p>
+                    <footer class="blockquote-footer text-light">Client from 
+                      <cite title="Sam Smith" class="text-warning">Sam Smith</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div>
+                  <blockquote class="blockquote text-light">
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt necessitatibus totam nihil velit. Aliquid, cum!
+                    </p>
+                    <footer class="blockquote-footer text-light">Client from 
+                      <cite title="Meghan Williams" class="text-warning">Meghan Williams</cite>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous"></script>
   <script>
     //get the current year for the copyright
     $('#year').text(new Date().getFullYear());
@@ -151,6 +204,14 @@
      }
      navclone();
    });
+
+
+   //configure slider
+   $('.slider').slick({
+      infinite: true,
+      slideToShow: 1,
+      slideToScroll: 1
+    });
 
   </script>
 </body>

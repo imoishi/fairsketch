@@ -52,10 +52,10 @@
   transform: translateX(0); }
 
 .navbar {
-  background: none !important;
   padding-top: 1.9rem; }
   .navbar .navbar-brand {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    color: #fff; }
   .navbar .navbar-nav .active a {
     color: #F7D203 !important; }
   .navbar .nav-item {
@@ -102,3 +102,19 @@
 #boxes .card :hover {
   background: #F7D203;
   color: #fff; }
+
+#testimonials {
+  height: 380px;
+  background: url("../img/client.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+  #testimonials .client {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    height: 380px;
+    background-attachment: fixed;
+    background: rgba(0, 0, 0, 0.5); }
+    #testimonials .client .client-inner {
+      padding-top: 7rem; }
