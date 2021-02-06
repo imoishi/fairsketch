@@ -231,3 +231,16 @@ $primary-overlay: rgba(0, 0, 0, 0.5);
 
   }
 }
+
+
+
+// feature
+
+#feature{
+  .card{
+    :hover{
+      background: $primary;
+      color: #fff;
+    }
+  }
+}

@@ -118,3 +118,7 @@
     background: rgba(0, 0, 0, 0.5); }
     #testimonials .client .client-inner {
       padding-top: 7rem; }
+
+#feature .card :hover {
+  background: #F7D203;
+  color: #fff; }
